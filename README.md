@@ -1,3 +1,14 @@
+---
+topic: sample
+languages:
+- csharp
+- fsharp
+- vbnet
+technologies:
+- office
+- windows
+- xbox
+---
 # Model in Azure AI Gallery
 
 ## Intro
