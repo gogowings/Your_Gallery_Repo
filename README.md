@@ -1,7 +1,36 @@
 ---
-platform: azure
-language: python
+topic: sample
+languages:
+- csharp
+- fsharp
+- vbnet
+technologies:
+- office
+- windows
+- xbox
+name: 'My amazing sample'
+urlFragment: my-amazing-sample
+description: 'I probably would have put an amazing description here as well.'
+statusNotificationTargets:
+- dendeli@microsoft.com
+azureDeploy: https://azuretemplate.bing.com/deployments/deploy.json
+extendedZipContent:
+- path: ../../media/header.png
+  target: /pictures
+extensions:
+- officeDevId: 3bb16609-f17e-4f5c-8a01-16db13c7c98c
+ci:
+- path: /fx
+  template: dotnet_fx_3.5
+- path: /core/sample1
+  template: dotnet_core_2.0
+- path: /core/sample2
+  template: dotnet_core_1.1
+- path: /core/sample3
+  dockerfile: ../../Dockerfile
+  dockerPlatform: linux
 ---
+
 # Model in Azure AI Gallery
 
 ## Intro
